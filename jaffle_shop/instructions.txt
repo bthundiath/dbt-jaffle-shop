@@ -1,0 +1,23 @@
+
+#1. Activate your virtual environment
+
+dbt_env\Scripts\activate
+
+#2. Navigate to your project folder
+
+cd C:\Users\bthun\Documents\dbt_learning\jaffle_shop
+
+#Your workflow from now on powershel
+l# Save your work on dev
+
+git add .
+git commit -m "describe what you did"
+git push -u origin dev    # first time pushing this branch
+git push                  # every time after that
+
+
+#When you're ready to merge into main
+git checkout main        # switch to main
+git merge dev            # bring dev changes into main
+git push                 # push updated main to GitHub
+git checkout dev         # switch back to dev to keep working
