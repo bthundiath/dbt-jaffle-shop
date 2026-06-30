@@ -5,4 +5,4 @@ select
         order_date,
         status
 
-from dbt_dev.raw_orders
+from {{ source('jaffle_shop', 'orders') }}

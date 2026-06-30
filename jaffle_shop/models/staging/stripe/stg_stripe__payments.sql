@@ -3,4 +3,4 @@ select
     order_id,
     payment_method,
     amount
-from dbt_dev.raw_payments
+from {{ source('stripe', 'payments') }}

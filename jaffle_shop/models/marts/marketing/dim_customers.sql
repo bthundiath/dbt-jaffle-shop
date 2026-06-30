@@ -6,7 +6,7 @@ with customers as (
         customer_id,
         first_name,
         last_name
-    from {{ ref('stg_customers') }}
+    from {{ ref('stg_jaffle_shop__customers') }}
 
 ),
 

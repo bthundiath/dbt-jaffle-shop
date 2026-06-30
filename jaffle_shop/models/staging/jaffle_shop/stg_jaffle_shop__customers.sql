@@ -5,4 +5,4 @@ select
         first_name,
         last_name
 
-    from dbt_dev.raw_customers
+    from {{ source('jaffle_shop', 'customers') }}
